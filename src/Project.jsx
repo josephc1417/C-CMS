@@ -1,7 +1,9 @@
-
+import { useFetchProjects } from "./fetchProjects"
 import "./fetchProjects"
 const Project = () => {
-  return (
+  const {projects,loading} = useFetchProjects()
+    console.log(projects,loading);
+    return (
     <h2> Project </h2>
   )
 }
